@@ -1,0 +1,35 @@
+{
+  "name": "radit-worker",
+  "version": "1.0.0",
+  "description": "Radit worker",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev nodemon index.js",
+    "start": "NODE_ENV=prod node index.js",
+    "format": "prettier \"./**/*.{js,html,json}\" --write",
+    "lint": "eslint \"./**/*.js\"",
+    "test": "NODE_ENV=test mocha tests/ --exit"
+  },
+  "keywords": [],
+  "author": "Anthony Agbafune",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
+    "mocha": "^8.1.1",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.2.0"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "amqplib": "^0.8.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "csurf": "^1.11.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.7",
+    "pug": "^3.0.1"
+  }
+}
